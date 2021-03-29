@@ -109,9 +109,9 @@ for l in bert_model.layers:
 x1_in = Input(shape=(None,))
 x2_in = Input(shape=(None,))
 
-x = bert_model([x1_in, x2_in])
-x = Lambda(lambda x: x[:, 0])(x)
-p = Dense(1, activation='sigmoid')(x)
+x = bert_model([x1_in, x2_in]) # （？，？，768）
+x = Lambda(lambda x: x[:, 0])(x) # （？，1，768）
+p = Dense(1, activation='sigmoid')(x) # （？，1，1）
 
 model = Model([x1_in, x2_in], p)
 model.compile(
