@@ -113,7 +113,7 @@ x = bert_model([x1_in, x2_in]) # （？，？，768）
 x = Lambda(lambda x: x[:, 0])(x) # （？，768）
 p = Dense(1, activation='sigmoid')(x) # （？，1）
 
-model = Model([x1_in, x2_in], p)
+model = Model([x1_in, x2_in], p) # 输入输出
 model.compile(
     loss='binary_crossentropy',
     optimizer=Adam(1e-5), # 用足够小的学习率
