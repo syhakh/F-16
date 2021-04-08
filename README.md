@@ -12,4 +12,5 @@
 >2.然后运行login.html，进行文本输入，点击查看预测标签。  
 ----------  
 #### 运行截图  
-[运行截图](file:///C:/Users/dell/Desktop/毕业大论文/Web网站/界面展示.PNG)
+![界面展示](https://user-images.githubusercontent.com/37302820/113991451-0b255380-9885-11eb-863b-401cfcf9e275.PNG)
+
